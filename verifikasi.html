@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verifikasi Surat - PemDes Ujunggebang</title>
+<style>body{margin:0;font-family:sans-serif;background:#f0fdf4;padding:20px;text-align:center} .card{background:white;padding:20px;border-radius:16px;max-width:500px;margin:20px auto;box-shadow:0 4px 20px rgba(0,0,0,0.1)} .success{background:#dcfce7;border:2px solid #16a34a;padding:15px;border-radius:12px;margin:15px 0} .logo{width:80px;height:80px;background:white;border-radius:50%;padding:5px}</style>
+</head><body>
+<div class="card">
+<img src="web/logo.jpg" class="logo">
+<h2>✅ Verifikasi Surat Sah</h2>
+<div class="success">
+<h3>PemDes Ujunggebang</h3>
+<p><b>Kuwu Sarjani 2026-2029</b><br>Jl. Tegaltaman-Ujunggebang Dusun Janggar 45257<br>Kec. Sukra - Kab. Indramayu</p>
+<p style="font-size:18px;font-weight:800;color:#0d7a3e">UJG-2026-SARJANI-45257</p>
+<p>Surat ini terverifikasi di database resmi Desa Ujunggebang</p>
+</div>
+<div style="display:flex;gap:10px;justify-content:center"><img src="web/stempel.png" style="width:80px"><img src="web/qr.png" style="width:80px"></div>
+<p style="font-size:12px;opacity:0.6;margin-top:20px">Scan QR Code pada surat untuk verifikasi<br>WA Kantor: +62 85656769749</p>
+<a href="index.html" style="display:block;background:#0d7a3e;color:white;padding:12px;border-radius:10px;text-decoration:none;margin-top:15px">🏠 Kembali ke Beranda</a>
+</div>
+<script>
+const params = new URLSearchParams(window.location.search);
+const kode = params.get('kode') || 'UJG-2026-SARJANI-45257';
+document.body.innerHTML = document.body.innerHTML.replace(/UJG-2026-SARJANI-45257/g, kode);
+</script>
+</body></html>
